@@ -3,7 +3,7 @@
 <h4>Special feature</h4> <ul><li>Crud operations integrations</li></ul>
 <h5>Live: https://hasan23398.web.app/</h5>
 
-<h4>Implemented Tech -  <h4>Mern stack technology</h4> </h4> <ul> <li>html,</li> <li>css,</li> <li>tailwind css</li> <li>javascript and,</li> <li>React</li>
+<h4>Implemented Tech -  <h4>Mern stack technology</h4> </h4> <ul> <li>Tailwind css</li> <li>React</li> <li>React Router</li> <li>Firebase</li> <li>Express js</li> <li>Rest api</li> <li>Mongodb</li> <li>html css......</li>
  
 
 
