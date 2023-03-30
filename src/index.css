@@ -1,0 +1,285 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+p{
+    color: #555555;
+    font-size: 14px;
+    list-style: 24px;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #000000;
+}
+.mySwiper{
+    height: 100vh;
+}
+.mySwiper span.swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
+    background: rgba(255,255,255,0.3);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: relative;
+    opacity: .6;
+    transition: all .5s ease-in;
+}
+.mySwiper span.swiper-pagination-bullet:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    position: relative;
+    opacity: 1;
+}
+.mySwiper span.swiper-pagination-bullet:hover::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.mySwiper span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: transparent;
+    border: 1px solid #fff;
+    position: relative;
+    opacity: 1;
+}
+
+.mySwiper span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.testimonial .swiper-slide{
+    width: 85%;
+}
+.content-inner{
+    position: relative;
+}
+.content-inner::before{
+    content: "\f086";
+    color: #ffb300;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-family: "Font Awesome 5 Free";
+    left: -26px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+
+.testimonial span.swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    opacity: 100%;
+}
+
+.testimonial .swiper-pagination-bullet-active {
+    background: #ffb300 !important;
+    border-color: #ffb300 !important;
+}
+.form.btn{
+    min-height: 2.5rem !important;
+    height: 2.5rem !important;
+    padding: 0 1.5rem !important;
+}
+.form .input-ghost:focus {
+    outline: none !important;
+
+}
+.form .input{
+    height: 2rem !important;
+}
+.input-divider::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 70%;
+    top: 50%;
+    right: 34px;
+    background: #d2d2d2;
+    transform: translateY(-50%);
+}
+.line::before{
+    content: "";
+    position: absolute;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid white;
+    top: -5px;
+    border-left: 6px solid transparent;
+    left: 44%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.header{
+    background-color: rgba(0,0,0,0.3) !important;
+    color: #ccc;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+.shopping-cart::before{
+    content: "\e800";
+    font: normal normal normal 16px/1 'Linearicons-Free';
+}
+.user::before{
+    content: "\e82a";
+    font: normal normal normal 16px/1 'Linearicons-Free';
+}
+.menu li{
+    margin: 0 12px;
+}
+.menu li a{
+    color: #fff;
+}
+.hotelName::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 38px;
+    height: 3px;
+    background: #fff;
+}
+.checkout .input:focus {
+    outline: none !important;
+    outline-offset: 0 !important;
+}
+.checkout-header::after{
+    content: "";
+    position: absolute;
+    width: 38%;
+    left: 31%;
+    background: #E8E8E8;
+    height: 2px;
+    bottom: -5px;
+}
+.checkout ::placeholder{
+    font-size: 15px;
+}
+
+.roomImage:hover .image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+.image-overlay{
+    position: relative;
+}
+input:focus-visible {
+    background: #fff;
+    outline: none;
+}
+.menu a.active::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+    width: 68%;
+    height: 3px;
+    background: #EDAC0C;
+}
+.menu a:hover::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+    width: 68%;
+    height: 3px;
+    background: #EDAC0C;
+}
+
+.menu a.active::before{
+    content: "";
+    position: absolute;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #EDAC0C;
+    bottom: 2px;
+    border-left: 6px solid transparent;
+    left: 44%;
+}
+.menu a:hover::before{
+    content: "";
+    position: absolute;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #EDAC0C;
+    bottom: 2px;
+    border-left: 6px solid transparent;
+    left: 44%;
+}
+.menu a.active{
+    color: #EDAC0C;
+    background: transparent;
+}
+input:focus, textarea:focus{
+    outline: none !important;
+}
+.detailsRoomImg{
+    box-shadow: 0px 0px 3px 1px #242323 ;
+    transition: .3s ease-out;
+}
+.detailsRoomImg:hover{
+    transform: scale(1.1);
+}
+.detailsRoomImg:hover .rating{
+    height: auto !important;
+    padding: 10px;
+    transition: .5s ease-in-out;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .menu a.active::before{
+        content: "";
+        display: none;
+    }
+    .menu a:hover::before {
+        content: "";
+        display: none
+    }
+    .menu a.active::after{
+    content: '';
+    display: none;
+   }
+   .menu a:hover::after{
+    content: '';
+    display: none;
+  
+}
+  }

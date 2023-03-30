@@ -1,0 +1,96 @@
+.card-footer{
+    position: relative;
+   
+}
+.card-footer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border: 1px solid #E8E8E8;
+}
+
+.people::before{
+    content: "\e82a";
+    font: normal normal normal 18px/1 'Linearicons-Free';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -6px;
+    color: #ffb300;
+}
+.children::before{
+    content: "\e82b";
+    font: normal normal normal 18px/1 'Linearicons-Free';
+    margin-right: 10px;
+    margin-top: -6px;
+    display: inline-block;
+    color: #ffb300;
+    vertical-align: middle;
+}
+.category::before{
+    content: "\e829";
+    font: normal normal normal 18px/1 'Linearicons-Free';
+    margin-top: -6px;
+    margin-right: 10px;
+    display: inline-block;
+    color: #ffb300;
+    vertical-align: middle;
+}
+.home::after {
+    content: "\e876";
+    font: normal normal normal 12px/1 'Linearicons-Free';
+    margin-top: -6px;
+    margin-right: 10px;
+    display: inline-block;
+    color: #ffb300;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.name::after {
+    content: "\e876";
+    font: normal normal normal 12px/1 'Linearicons-Free';
+    margin-top: -6px;
+    margin-right: 10px;
+    display: inline-block;
+    color: #ffb300;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.status::after{
+    content: "";
+    position: absolute;
+    border-top: 7px solid #26bdf7;
+    right: 0;
+    bottom: -7px;
+    border-right: 7px solid transparent;
+}
+.button-prev-slide::before{
+    content: "\e875";
+    font: normal normal normal 12px/1 'Linearicons-Free';
+}
+.button-next-slide::before{
+    content: "\e876";
+    font: normal normal normal 12px/1 'Linearicons-Free';
+}
+
+.button-next-slide, .button-prev-slide{
+    right: 3px;
+    width: 30px;
+    height: 30px;
+    z-index: 100;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.roomsSwiper{
+    padding-bottom: 30px;
+}
+
+.swiper-button-disabled {
+    opacity: .5;
+}
