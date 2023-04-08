@@ -5,37 +5,49 @@
 html {
     overflow-x: hidden;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
-p{
+
+p {
     color: #555555;
     font-size: 14px;
     list-style: 24px;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #000000;
 }
-.mySwiper{
+
+.mySwiper {
     height: 100vh;
 }
+
 .mySwiper span.swiper-pagination-bullet {
     width: 18px;
     height: 18px;
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     border: 1px solid transparent;
     border-radius: 50%;
     position: relative;
     opacity: .6;
     transition: all .5s ease-in;
 }
+
 .mySwiper span.swiper-pagination-bullet:hover {
     background: transparent;
     border: 1px solid #fff;
     position: relative;
     opacity: 1;
 }
+
 .mySwiper span.swiper-pagination-bullet:hover::before {
     content: "";
     width: 6px;
@@ -46,8 +58,9 @@ h1,h2,h3,h4,h5,h6{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
 }
+
 .mySwiper span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: transparent;
     border: 1px solid #fff;
@@ -67,13 +80,20 @@ h1,h2,h3,h4,h5,h6{
     transform: translate(-50%, -50%);
 }
 
-.testimonial .swiper-slide{
+.btn-outline:hover {
+    background: #EDAC0C;
+    border: 1px solid #EDAC0C;
+}
+
+.testimonial .swiper-slide {
     width: 85%;
 }
-.content-inner{
+
+.content-inner {
     position: relative;
 }
-.content-inner::before{
+
+.content-inner::before {
     content: "\f086";
     color: #ffb300;
     position: absolute;
@@ -100,19 +120,23 @@ h1,h2,h3,h4,h5,h6{
     background: #ffb300 !important;
     border-color: #ffb300 !important;
 }
-.form.btn{
+
+.form.btn {
     min-height: 2.5rem !important;
     height: 2.5rem !important;
     padding: 0 1.5rem !important;
 }
+
 .form .input-ghost:focus {
     outline: none !important;
 
 }
-.form .input{
+
+.form .input {
     height: 2rem !important;
 }
-.input-divider::before{
+
+.input-divider::before {
     content: "";
     position: absolute;
     width: 1px;
@@ -122,7 +146,8 @@ h1,h2,h3,h4,h5,h6{
     background: #d2d2d2;
     transform: translateY(-50%);
 }
-.line::before{
+
+.line::before {
     content: "";
     position: absolute;
     border-right: 6px solid transparent;
@@ -131,37 +156,43 @@ h1,h2,h3,h4,h5,h6{
     border-left: 6px solid transparent;
     left: 44%;
 }
-.overlay{
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-.header{
-    background-color: rgba(0,0,0,0.3) !important;
+.header {
+    background-color: rgba(0, 0, 0, 0.3) !important;
     color: #ccc;
     position: fixed;
     z-index: 100;
     width: 100%;
 }
-.shopping-cart::before{
+
+.shopping-cart::before {
     content: "\e800";
     font: normal normal normal 16px/1 'Linearicons-Free';
 }
-.user::before{
+
+.user::before {
     content: "\e82a";
     font: normal normal normal 16px/1 'Linearicons-Free';
 }
-.menu li{
+
+.menu li {
     margin: 0 12px;
 }
-.menu li a{
+
+.menu li a {
     color: #fff;
 }
-.hotelName::after{
+
+.hotelName::after {
     content: "";
     position: absolute;
     bottom: -10px;
@@ -170,11 +201,13 @@ h1,h2,h3,h4,h5,h6{
     height: 3px;
     background: #fff;
 }
+
 .checkout .input:focus {
     outline: none !important;
     outline-offset: 0 !important;
 }
-.checkout-header::after{
+
+.checkout-header::after {
     content: "";
     position: absolute;
     width: 38%;
@@ -183,11 +216,12 @@ h1,h2,h3,h4,h5,h6{
     height: 2px;
     bottom: -5px;
 }
-.checkout ::placeholder{
+
+.checkout ::placeholder {
     font-size: 15px;
 }
 
-.roomImage:hover .image-overlay{
+.roomImage:hover .image-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -197,35 +231,39 @@ h1,h2,h3,h4,h5,h6{
     opacity: 1;
     transition: opacity 1s ease-in-out;
 }
-.image-overlay{
+
+.image-overlay {
     position: relative;
 }
+
 input:focus-visible {
     background: #fff;
     outline: none;
 }
-.menu a.active::after{
+
+.menu a.active::after {
     content: '';
     position: absolute;
     bottom: 0;
-   left: 50%;
-   transform: translateX(-50%);
-    width: 68%;
-    height: 3px;
-    background: #EDAC0C;
-}
-.menu a:hover::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-   left: 50%;
-   transform: translateX(-50%);
+    left: 50%;
+    transform: translateX(-50%);
     width: 68%;
     height: 3px;
     background: #EDAC0C;
 }
 
-.menu a.active::before{
+.menu a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 68%;
+    height: 3px;
+    background: #EDAC0C;
+}
+
+.menu a.active::before {
     content: "";
     position: absolute;
     border-right: 6px solid transparent;
@@ -234,7 +272,8 @@ input:focus-visible {
     border-left: 6px solid transparent;
     left: 44%;
 }
-.menu a:hover::before{
+
+.menu a:hover::before {
     content: "";
     position: absolute;
     border-right: 6px solid transparent;
@@ -243,21 +282,27 @@ input:focus-visible {
     border-left: 6px solid transparent;
     left: 44%;
 }
-.menu a.active{
+
+.menu a.active {
     color: #EDAC0C;
     background: transparent;
 }
-input:focus, textarea:focus{
+
+input:focus,
+textarea:focus {
     outline: none !important;
 }
-.detailsRoomImg{
-    box-shadow: 0px 0px 3px 1px #242323 ;
+
+.detailsRoomImg {
+    box-shadow: 0px 0px 3px 1px #242323;
     transition: .3s ease-out;
 }
-.detailsRoomImg:hover{
+
+.detailsRoomImg:hover {
     transform: scale(1.1);
 }
-.detailsRoomImg:hover .rating{
+
+.detailsRoomImg:hover .rating {
     height: auto !important;
     padding: 10px;
     transition: .5s ease-in-out;
@@ -265,21 +310,24 @@ input:focus, textarea:focus{
 
 
 @media only screen and (max-width: 600px) {
-    .menu a.active::before{
+    .menu a.active::before {
         content: "";
         display: none;
     }
+
     .menu a:hover::before {
         content: "";
         display: none
     }
-    .menu a.active::after{
-    content: '';
-    display: none;
-   }
-   .menu a:hover::after{
-    content: '';
-    display: none;
-  
+
+    .menu a.active::after {
+        content: '';
+        display: none;
+    }
+
+    .menu a:hover::after {
+        content: '';
+        display: none;
+
+    }
 }
-  }

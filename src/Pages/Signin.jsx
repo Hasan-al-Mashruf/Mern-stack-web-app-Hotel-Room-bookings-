@@ -31,6 +31,7 @@ const Signin = () => {
             .then((userCredential) => {
                 const user = userCredential.user;
                 if (user) {
+                    console.log('signend in')
                     setConfiquredEmail(email)
                 }
                 // ...
@@ -44,16 +45,6 @@ const Signin = () => {
             }));
     }
 
-    // const verifyJWT = (email) => {
-    //     fetch(`https://hotelbookings-server.vercel.app/jwt?email=${email}`)
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             if (data.accessToken) {
-    //                 localStorage.setItem('token', data.accessToken)
-    //                 navigate(from, { replace: true });
-    //             }
-    //         })
-    // }
 
     return (
         <div className='min-h-[100vh]'>

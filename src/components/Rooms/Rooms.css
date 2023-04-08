@@ -12,10 +12,10 @@
 
 .people::before{
     content: "\e82a";
-    font: normal normal normal 18px/1 'Linearicons-Free';
+    font: normal normal normal 15px/1 'Linearicons-Free';
     margin-right: 10px;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: initial;
     margin-top: -6px;
     color: #ffb300;
 }

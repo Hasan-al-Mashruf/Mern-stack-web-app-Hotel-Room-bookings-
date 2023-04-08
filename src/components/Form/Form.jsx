@@ -20,7 +20,7 @@ const Form = () => {
                         </div>
                     </div>
                 </div>
-                <div className='md:w-[40%] md:px-10 px-5  mt-4 md:mt-0'>
+                <div className='md:w-[40%] md:px-10 px-5  mt-4 md:mt-0 input-divider relative'>
                     <h2>people</h2>
                     <div className='grid grid-cols-2 gap-2'>
                         <div>

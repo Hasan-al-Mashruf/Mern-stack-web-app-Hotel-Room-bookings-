@@ -28,7 +28,6 @@ const RoomDetails = () => {
             roomImage, roomName, name, email, checkin, checkout, quantity, prize, img
         }
 
-
         saveBookings(bookings)
     }
 

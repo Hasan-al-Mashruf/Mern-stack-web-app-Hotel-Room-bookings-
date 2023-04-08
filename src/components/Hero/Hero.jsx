@@ -23,6 +23,7 @@ const sliderContent = [
     { id: 2, img: Image3, description: "10 reasons you'll love Australias' Bayron bay" },
     { id: 3, img: Image4, description: "10 reasons you'll love Australias' Bayron bay" }
 ]
+
 const Hero = () => {
     return (
 

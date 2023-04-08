@@ -85,7 +85,7 @@ const DiscountRooms = () => {
                                                 <p>{room.details}</p>
                                             </div>
                                         </div>
-                                        <div className='card-footer py-3 flex text-[#666]'>
+                                        <div className='card-footer pt-3 flex text-[#666]'>
                                             <div className='mr-5'>
                                                 <span className='people'>{room.people.adults} people</span>
                                             </div>

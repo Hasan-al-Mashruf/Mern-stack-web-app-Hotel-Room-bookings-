@@ -63,13 +63,14 @@ const Shop = () => {
                                 <option value='clear'>Clear filter</option>
                             </select>
                         </div>
+
                         <div className='grid md:grid-cols-3 gap-5'>
                             {
                                 data?.map(room => <div>
                                     <Link to={`/roomDetails/${room?._id}`}>
                                         <div className="card card-compact shadow-xl rounded-none">
                                             <div className='relative'>
-                                                <div className='relative roomImage inline-block'>
+                                                <div className='relative roomImage inline-block w-full'>
                                                     <img src={room.img} alt="Shoes" className='block w-full h-40 object-cover' />
                                                     <h3 className='bg-yellow-400 px-3 py-1 absolute top-[15px] left-0 text-white'>${room.prize}</h3>
                                                     <div className='flex absolute bottom-0 bg-[#3d3d3d54] w-full pl-5 text-white'>
